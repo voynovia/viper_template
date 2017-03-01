@@ -6,8 +6,10 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
+import Foundation
 import ViperMcFlurry
 
-class {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+class {{ module_info.name }}Router: NSObject, {{ module_info.name }}RouterInput {
 	weak var transitionHandler: RamblerViperModuleTransitionHandlerProtocol!
+	var moduleOutput: {{ module_info.name }}ModuleInput!
 }

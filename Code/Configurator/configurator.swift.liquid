@@ -25,7 +25,8 @@ class {{ module_info.name }}ModuleConfigurator {
         let presenter = {{ module_info.name }}Presenter()
         presenter.view = viewController
         presenter.router = router
-
+        router.moduleOutput = presenter
+        
         let interactor = {{ module_info.name }}Interactor()
         interactor.output = presenter
 
